@@ -1,0 +1,227 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+nav a{
+    color: rgb(19, 19, 20);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li a{
+    color: rgb(17, 19, 22);
+}
+nav{
+    background-color: rgb(245, 245, 245);
+    font-size: 18px;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between; 
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 38px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color:rgb(111, 95, 160) ;
+}
+.sample {
+    position: relative; /* Ensure relative positioning for z-index to work */
+    padding: 300px; /* Adjust padding based on your design needs */
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Center content vertically */
+   overflow: hidden;
+    
+}
+
+.demo-bg {
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+.sample1 {
+    background-color: rgba(0, 0, 0, 0.1); /* Use rgba for a transparent background color */
+    color:black;
+    font-size: 45px;
+    text-align: left;
+    display: block;
+    font-weight: bolder;
+    position: relative;
+}
+.demo{
+    font-size: 25px;
+    text-align: left;
+}
+
+.submit{
+    border-radius: 5px;
+    background-color: black;
+    font-size:30px ;
+    color:white;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid #150209;
+    box-shadow: 2px;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+}
+.head{
+    text-align: center;
+}
+.book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.text{
+    width: 300px;
+}
+
+.book-card {
+    width: 400px;
+    height: 460px; /* Set a fixed height for the book card */
+    border-radius: 100px;
+    margin: 10px;
+    perspective: 1000px; /* Set the perspective for 3D effect */
+}
+
+.book-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+.book-card:hover .book-card-inner {
+    transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.book-card-front,
+.book-card-back {
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    position:absolute;
+    backface-visibility: hidden; /* Hide the backface of the card during the flip */
+    font-family:cursive;
+}
+
+.book-card-front {
+    transform: rotateY(0deg);
+}
+
+.book-card-back {
+    transform: rotateY(180deg); 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-card-back p {
+    padding: 10px;
+    text-align: center;
+}
+.book-card img,
+.book-card p {
+    width: 100%;
+    height: 100%;
+}
+
+
+.book-card img {
+    border-radius: 8px;
+}
+
+.book-card-back {
+    background-color:rgba(254, 254, 254, 0.2)
+}
+#search{
+    text-align: center;
+}
+
+#search {
+    background-color: #f0f0f0; /* Set the background color */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center-align the text */
+  }
+  #search form {
+    margin-top: 20px; /* Add margin to separate the form from the section title */
+  }
+
+  /* Style for the search input and button */
+  #search input,
+  #search button {
+    padding: 10px; /* Add padding to the input and button */
+    font-size: 16px; /* Set the font size */
+  }
+
+  /* Style for the search button */
+  #search button {
+    background-color: #4CAF50; /* Set the background color for the button */
+    color: white; /* Set the text color for the button */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add a cursor pointer on hover */
+  }
+#contact {
+    text-align: center;
+} 
+
+#form {
+    margin:0px 700px;
+    font-size: 20px;
+    width:20px;
+}
+#form button {
+    background-color: #4CAF50; /* Set the background color for the button */
+    color: white; /* Set the text color for the button */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add a cursor pointer on hover */
+    padding: 10px; /* Add padding to the input and button */
+    font-size: 16px;
+  }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media all and (min-width:801px)
+{
+    .sample1{
+        float:left;
+        padding:10px;
+    }
+}
